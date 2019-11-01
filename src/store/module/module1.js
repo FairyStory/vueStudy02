@@ -12,7 +12,7 @@ const getters={
 
 }
 
-export  const  module1 = {
+export  default{
     state,
     mutations,
     actions,
