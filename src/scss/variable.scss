@@ -1,0 +1,54 @@
+$width :1024px; //变量声明
+//变量名即可用下划线也可用中划线分割
+$background_color :rgb(18, 123, 208);
+$border-color-1:green;
+$border-color-2:red;
+$white:#fff; //变量声明
+
+.contentWidth{
+  width: $width;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.contentWidth a{
+  &:hover{ //&指父选择器 即.contentWidth a
+    color: $border-color-2;
+    border: { //属性嵌套
+      style: solid;
+      width: 1px;
+      color: $white;
+      }
+  }
+  body &:hover{ //&前可添加选择器
+    color: $border-color-2;
+  }
+}
+.new {
+  color: green;
+}
+//@mixin混合器定义公用代码片段
+//@include 引用
+@mixin  head {
+  width: 100%;
+  background-color:  $background_color;
+  color: #fff;
+  padding: 0 15px;
+  >div{
+    width: $width;
+    margin: 0 auto;
+    height: 100%;
+  }
+}
+// @mixin可以传递参数
+@mixin link-colors($normal, $hover, $visited) {
+  color: $normal;
+  &:hover { color: $hover; }
+  &:visited { color: $visited; }
+}
+//@extend 继承
+a {
+  @include link-colors(blue,  $border-color-2, $border-color-1);
+  @extend  .new 
+
+}

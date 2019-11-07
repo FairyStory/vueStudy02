@@ -8,10 +8,13 @@
 
 export default {
   name: 'app',
+  
 
 }
 </script>
 
 <style scoped lang="scss">
+@import './scss/variable.scss'
+
 
 </style>

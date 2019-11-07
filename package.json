@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "axios": "^0.19.0",
+    "bootstrap-table": "^1.15.5",
     "core-js": "^3.1.2",
     "scss-loader": "0.0.1",
     "vant": "^2.2.9",
@@ -23,9 +24,9 @@
     "babel-eslint": "^10.0.1",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
-    "node-sass": "^4.13.0",
-    "sass-loader": "^8.0.0",
     "style-loader": "^1.0.0",
-    "vue-template-compiler": "^2.6.10"
+    "vue-template-compiler": "^2.6.10",
+    "node-sass": "^4.13.0",
+    "sass-loader": "^8.0.0"
   }
 }
